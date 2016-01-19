@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200DBC551C3A9F78000B238D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200DBC541C3A9F78000B238D /* MapKit.framework */; };
 		208E9F651C03304A001FFF3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E9F641C03304A001FFF3D /* AppDelegate.swift */; };
 		208E9F671C03304A001FFF3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E9F661C03304A001FFF3D /* ViewController.swift */; };
 		208E9F6A1C03304A001FFF3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208E9F681C03304A001FFF3D /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		208E9F6F1C03304A001FFF3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208E9F6D1C03304A001FFF3D /* LaunchScreen.storyboard */; };
 		208E9F7A1C03304A001FFF3D /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E9F791C03304A001FFF3D /* LocationManagerTests.swift */; };
 		208E9F851C03304A001FFF3D /* LocationManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E9F841C03304A001FFF3D /* LocationManagerUITests.swift */; };
+		208E9F961C033992001FFF3D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208E9F921C033072001FFF3D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		200DBC541C3A9F78000B238D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		208E9F611C03304A001FFF3D /* LocationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208E9F641C03304A001FFF3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		208E9F661C03304A001FFF3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		208E9F801C03304A001FFF3D /* LocationManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		208E9F841C03304A001FFF3D /* LocationManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerUITests.swift; sourceTree = "<group>"; };
 		208E9F861C03304A001FFF3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208E9F921C033072001FFF3D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200DBC551C3A9F78000B238D /* MapKit.framework in Frameworks */,
+				208E9F961C033992001FFF3D /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 		208E9F581C03304A001FFF3D = {
 			isa = PBXGroup;
 			children = (
+				200DBC541C3A9F78000B238D /* MapKit.framework */,
+				208E9F921C033072001FFF3D /* CoreLocation.framework */,
 				208E9F631C03304A001FFF3D /* LocationManager */,
 				208E9F781C03304A001FFF3D /* LocationManagerTests */,
 				208E9F831C03304A001FFF3D /* LocationManagerUITests */,
@@ -193,6 +201,7 @@
 				TargetAttributes = {
 					208E9F601C03304A001FFF3D = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = M4KCVZGC5K;
 					};
 					208E9F741C03304A001FFF3D = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -397,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LocationManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Alatan.LocationManager;
+				PRODUCT_BUNDLE_IDENTIFIER = "-207457319-qq.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LocationManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Alatan.LocationManager;
+				PRODUCT_BUNDLE_IDENTIFIER = "-207457319-qq.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +497,7 @@
 				208E9F8B1C03304A001FFF3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		208E9F8C1C03304A001FFF3D /* Build configuration list for PBXNativeTarget "LocationManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +506,7 @@
 				208E9F8E1C03304A001FFF3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		208E9F8F1C03304A001FFF3D /* Build configuration list for PBXNativeTarget "LocationManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +515,7 @@
 				208E9F911C03304A001FFF3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
